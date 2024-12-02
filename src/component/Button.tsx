@@ -16,7 +16,7 @@ const variantStyles = {
   secondary: "bg-purple-300 text-purple-600",
 };
 
-const defaultStyles = "rounded-xl inline-flex items-center gap-2 font-light";
+const defaultStyles = "rounded-xl inline-flex items-center gap-2 font-semibold";
 
 const sizeStyles = {
   sm: "py-1 px-2",
@@ -30,6 +30,7 @@ export const Button = (props: ButtonProps) => {
       className={`${variantStyles[props.variant]} ${defaultStyles} ${
         sizeStyles[props.size]
       } `}
+      onClick={props.onClick}
     >
       {props.startIcon} {props.text}
     </button>
