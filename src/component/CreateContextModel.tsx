@@ -2,7 +2,6 @@ import CrossIcon from "../icons/CrossIcon";
 import { Button } from "./Button";
 
 const CreateContextModel = ({ open, onClose }) => {
-
   return (
     <div>
       {open && (
