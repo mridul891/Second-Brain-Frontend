@@ -1,9 +1,11 @@
+import DeleteIcon from "../icons/DeleteIcon";
 import { ShareIcon } from "../icons/ShareIcon";
+import TextIcon from "../icons/TextIcon";
 
 interface CardProps {
   title: string;
   link: string;
-  type: "twitter" | "youtube";
+  type: "twitter" | "youtube" | "text";
 }
 
 export const Card = ({ title, link, type }: CardProps) => {
@@ -17,13 +19,13 @@ export const Card = ({ title, link, type }: CardProps) => {
         <div className="flex justify-between w-full font-bold">
           {/* First child */}
           <div className="flex items-center gap-3">
-            <ShareIcon />
+            <TextIcon />
             {title}
           </div>
           {/* Second Child */}
           <div className="flex gap-2 text-gray-500 items-center">
             <ShareIcon />
-            <ShareIcon />
+            <DeleteIcon />
           </div>
         </div>
         {/* Video Component   */}
