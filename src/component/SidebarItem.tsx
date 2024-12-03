@@ -2,9 +2,11 @@ import { ReactElement } from "react";
 
 const SidebarItem = ({ text, icon }: { text: string; icon: ReactElement }) => {
   return (
-    <div className="flex  items-center justify-evenly text-slate-700">
-      <div>{icon}</div>
-      {text}
+    <div
+      className="inline-flex items-center justify-center gap-5 text-gray-700 cursor-pointer  
+    hover:text-gray-500"
+    >
+      {icon} {text}
     </div>
   );
 };

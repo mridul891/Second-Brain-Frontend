@@ -1,5 +1,6 @@
 import CrossIcon from "../icons/CrossIcon";
 import { Button } from "./Button";
+import { Input } from "./Input";
 
 const CreateContextModel = ({ open, onClose }) => {
   return (
@@ -33,23 +34,5 @@ const CreateContextModel = ({ open, onClose }) => {
   );
 };
 
-function Input({
-  onChange,
-  placeholder,
-}: {
-  onChange: () => void;
-  placeholder: string;
-}) {
-  return (
-    <div>
-      <input
-        type={"text"}
-        placeholder={placeholder}
-        onChange={onChange}
-        className="px-4 py-2 border-2 rounded-lg "
-      />
-    </div>
-  );
-}
 
 export default CreateContextModel;
